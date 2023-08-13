@@ -7450,12 +7450,12 @@
   
   .mb-5,
   .my-5 {
-    margin-bottom: 3rem !important;
+    margin-bottom: rem !important;
   }
   
   .ml-5,
   .mx-5 {
-    margin-left: 3rem !important;
+    margin-left: rem !important;
   }
   
   .p-0 {
@@ -7584,7 +7584,7 @@
   
   .pt-5,
   .py-5 {
-    padding-top: 3rem !important;
+    padding-top: 1rem !important;
   }
   
   .pr-5,
@@ -7594,7 +7594,7 @@
   
   .pb-5,
   .py-5 {
-    padding-bottom: 3rem !important;
+    padding-bottom: 1rem !important;
   }
   
   .pl-5,
