@@ -26,7 +26,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-const total = 30;
+const total = 100;
 const dotContainer = document.querySelector(".dot-container");
 const w = window.innerWidth;
 const h = window.innerHeight;
