@@ -26,12 +26,13 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-const total = 100;
+// Rose Petals
+const total = 80;
 const dotContainer = document.querySelector(".dot-container");
 const w = window.innerWidth;
 const h = window.innerHeight;
 
-for (let i = 0; i < total; i++) {
+for (let i = 10; i < total; i++) {
   const dot = document.createElement('div');
   dot.className = 'dot';
   dot.style.left = Math.random() * w + 'px';
@@ -42,8 +43,13 @@ for (let i = 0; i < total; i++) {
 }
 
 function animateDot(dot) {
-  const duration = Math.random() * 10 + 6; // Random duration between 6 and 16 seconds
+
+    const minDuration = 30; // Minimum duration in seconds
+const maxDuration = 40; // Maximum duration in seconds
 const fallDistance = h + 100;
+
+  const duration = Math.random() * 10 + 6; // Random duration between 6 and 16 seconds
+
   dot.style.transition = `transform ${duration}s linear, opacity ${duration}s linear`;
   dot.style.transform = `translateY(${h}px)`;
   dot.style.opacity = '0';
@@ -56,7 +62,7 @@ const fallDistance = h + 100;
     requestAnimationFrame(() => {
       animateDot(dot);
     });
-  }, duration * 1000);
+  }, duration * 1000);
 }
 
 
