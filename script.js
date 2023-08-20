@@ -43,7 +43,7 @@ for (let i = 0; i < total; i++) {
 
 function animateDot(dot) {
   const duration = Math.random() * 10 + 6; // Random duration between 6 and 16 seconds
-
+const fallDistance = h + 100;
   dot.style.transition = `transform ${duration}s linear, opacity ${duration}s linear`;
   dot.style.transform = `translateY(${h}px)`;
   dot.style.opacity = '0';
